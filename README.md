@@ -1,3 +1,21 @@
+# UPDATE
+
+```
+micromamba create -n cogvlm python=3.10.12
+micromamba activate cogvlm
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+if you want to tweak the dependencies
+
+```
+vim requirements.in
+bash update_dependencies.sh
+```
+
+then you can use the resolved requirements.txt file.
+Never edit reuquirement.txt. Do so in requirements.in
+
 # CogVLM & CogAgent
 
 📗 [中文版README](./README_zh.md)
